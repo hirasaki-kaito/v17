@@ -400,7 +400,7 @@ module.exports = Ramdani = async (Ramdani, mek) => {
 
         
         const listmsg = (from, title, desc, list) => { // ngeread nya pake rowsId, jadi command nya ga keliatan
-            let po = Ramdani.prepareMessageFromContent(from, {"listMessage": {"title": title,"description": desc,"buttonText": "Pilih Disini","footerText": "© ʙʏ ʀᴀᴍᴅᴀɴɪ ᴏғғɪᴄɪᴀʟ","listType": "SINGLE_SELECT","sections": list}}, {})
+            let po = Ramdani.prepareMessageFromContent(from, {"listMessage": {"title": title,"description": desc,"buttonText": "Pilih Disini","footerText": "@ɪꜱʜɪᴅᴀɪɪ","listType": "SINGLE_SELECT","sections": list}}, {})
             return Ramdani.relayWAMessage(po, {waitForAck: true})
         }
         
@@ -703,7 +703,7 @@ sendEphemeral: false,
 		const isQuotedSticker = type === 'extendedTextMessage' && content.includes('stickerMessage')
         const troli =  {key: { fromMe: false,remoteJid: "status@broadcast", participant: '0@s.whatsapp.net'}, message: {orderMessage: {itemCount: 500, status: 200, thumbnail: fakeimage, surface: 200, message: faketroli, orderTitle: 'Ramdani', sellerJid: '0@s.whatsapp.net'} } }
         const ftext = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})},message: { "extendedTextMessage": {"text": `*Hai ${pushname}👋*\n  ${moment().utcOffset('+0700').format('HH:mm:ss')} ${moment.tz('Asia/Jakarta').format('DD/MM/YYYY')}`,"title": `Hmm`,'jpegThumbnail': fs.readFileSync('./media/foto/thumb.jpg')}}}
-        const ftoko = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})},message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": fs.readFileSync(`./media/foto/thumb.jpg`)},"title": `© ʙʏ ʀᴀᴍᴅᴀɴɪ ᴏғғɪᴄɪᴀʟ`,"description": "Ramdani Official", "currencyCode": "IDR","priceAmount1000": "999999","retailerId": "Ramdani Official","productImageCount": 1},"businessOwnerJid": `0@s.whatsapp.net`}}}
+        const ftoko = {key: {fromMe: false,participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "16505434800@s.whatsapp.net" } : {})},message: {"productMessage": {"product": {"productImage":{"mimetype": "image/jpeg","jpegThumbnail": fs.readFileSync(`./media/foto/thumb.jpg`)},"title": `@ɪꜱʜɪᴅᴀɪɪ`,"description": "Ramdani Official", "currencyCode": "IDR","priceAmount1000": "999999","retailerId": "Ramdani Official","productImageCount": 1},"businessOwnerJid": `0@s.whatsapp.net`}}}
 
       // Anti link
         if (isGroup && isAntiLink && !isOwner && !isGroupAdmins && isBotGroupAdmins){
@@ -1164,7 +1164,7 @@ break
 
                buttonsMessage = {
                contentText: `${menu}`,
-               footerText: 'ᴊɪᴋᴀ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ᴇʀʀᴏʀ sɪʟᴀʜᴋᴀɴ ᴋᴇʟɪᴋ .ᴀʟʟᴍᴇɴᴜ ᴜɴᴛᴜᴋ ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ᴍᴇɴᴜ\n© ʙʏ ʀᴀᴍᴅᴀɴɪ ᴏғғɪᴄɪᴀʟ', imageMessage: imageMsg,
+               footerText: 'ᴊɪᴋᴀ ᴛᴏᴍʙᴏʟ ᴅɪ ʙᴀᴡᴀʜ ᴇʀʀᴏʀ sɪʟᴀʜᴋᴀɴ ᴋᴇʟɪᴋ .ᴀʟʟᴍᴇɴᴜ ᴜɴᴛᴜᴋ ᴍᴇɴᴀᴍᴘɪʟᴋᴀɴ ᴍᴇɴᴜ\n@ɪꜱʜɪᴅᴀɪɪ', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -1818,7 +1818,7 @@ break
 
                buttonsMessage = {
                contentText: `${allmenu}`,
-               footerText: '© ʙʏ ʀᴀᴍᴅᴀɴɪ ᴏғғɪᴄɪᴀʟ', imageMessage: imageMsg,
+               footerText: '@ɪꜱʜɪᴅᴀɪɪ', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -1892,7 +1892,7 @@ break
 
                buttonsMessage = {
                contentText: `${qris}`,
-               footerText: '© ʙʏ ʀᴀᴍᴅᴀɴɪ ᴏғғɪᴄɪᴀʟ', imageMessage: imageMsg,
+               footerText: '@ɪꜱʜɪᴅᴀɪɪ', imageMessage: imageMsg,
                buttons: buttons,
                headerType: 4
 }
@@ -3079,7 +3079,7 @@ teksnya = `*[ PAYMENT ]*
 *Gopay :* 089512545999
 *Dana :* 089512545999
 *Ovo :* 089512545999
-*[ © ʙʏ ʀᴀᴍᴅᴀɴɪ ᴏғғɪᴄɪᴀʟ ]*`
+*[ @ɪꜱʜɪᴅᴀɪɪ ]*`
         Ramdani.sendMessage(from, await getBuffer(gopeynya), image, {quoted: ftoko, caption: teksnya })
               break
 //--------------------<const menu>--------------------
@@ -4798,7 +4798,7 @@ break
               bokep = body.slice(1)
               const bo =['https://www.mediafire.com/download/8hnhjcf3pseubgy','https://www.mediafire.com/download/cty9phda3d1s62u','https://www.mediafire.com/download/8hnhjcf3pseubgy']
               const kep = bo[Math.floor(Math.random() * bo.length)]
-              Ramdani.sendMessage(from, '*PERMINTAAN:* '+bokep+'\n*DOSA TANGGUNG PRIBADI*\n*NI BRO FREE BUAT KAMU DOWNLOAD SENDIRI:* '+ kep, text, { quoted: ftoko, caption: `NI BOKEP SAYA DAPAT DARI *© ʙʏ ʀᴀᴍᴅᴀɴɪ ᴏғғɪᴄɪᴀʟ* DOSA TANGGUNG SENDIRI🗿`})
+              Ramdani.sendMessage(from, '*PERMINTAAN:* '+bokep+'\n*DOSA TANGGUNG PRIBADI*\n*NI BRO FREE BUAT KAMU DOWNLOAD SENDIRI:* '+ kep, text, { quoted: ftoko, caption: `NI BOKEP SAYA DAPAT DARI *@ɪꜱʜɪᴅᴀɪɪ* DOSA TANGGUNG SENDIRI🗿`})
               break
                 case 'xnxx':
               if (!isRegist) return freply(mess.regist)
@@ -5088,7 +5088,7 @@ break
         case 'masukandata': 
         if (!isRegist) return freply(mess.regist)
         if (isBanned) return freply(mess.banned)
-             freply(`*「BOT MELAYANI」*\n\n━━━━━━━━━━━━━━━━━━━━\n\nMASUKKANA DATA BERIKUT\n*•NAMA GAME:*\n*•ID GAME:*\n*•USER NAME:*\n━━━━━━━━━━━━━━━━━━━━\n*NOTE:*\n*1.* _JANGAN LUPA BUKTI TRXNYA_\n*2.* _OTOMATIS PESANAN_\n_LANSUNG DI PROSES_\n*3.* _PESANAN ANDA DI PROSES_\n_OLEH_\n\n   *© ʙʏ ʀᴀᴍᴅᴀɴɪ ᴏғғɪᴄɪᴀʟ*\n\n_JIKA PESANAN ANDA LOW_\n_PROSES MOHON BERSABAR_\nwa.me/6283146208804`)
+             freply(`*「BOT MELAYANI」*\n\n━━━━━━━━━━━━━━━━━━━━\n\nMASUKKANA DATA BERIKUT\n*•NAMA GAME:*\n*•ID GAME:*\n*•USER NAME:*\n━━━━━━━━━━━━━━━━━━━━\n*NOTE:*\n*1.* _JANGAN LUPA BUKTI TRXNYA_\n*2.* _OTOMATIS PESANAN_\n_LANSUNG DI PROSES_\n*3.* _PESANAN ANDA DI PROSES_\n_OLEH_\n\n   *@ɪꜱʜɪᴅᴀɪɪ*\n\n_JIKA PESANAN ANDA LOW_\n_PROSES MOHON BERSABAR_\nwa.me/6283146208804`)
               break
       case 'ping':
       case 'speed': 
@@ -5149,7 +5149,7 @@ teks = `\`\`\`BOT STATISTICS\`\`\`
              for (let _ of anu) {
 Ramdani.sendMessage(_.jid, 
 			{"contentText": `*「 Siaran ${namabot} 」*\n.Ijin Siaran\n*Isi Pesan :* ${body.slice(4)}`,
-			"footerText": '© ʙʏ ʀᴀᴍᴅᴀɴɪ ᴏғғɪᴄɪᴀʟ',
+			"footerText": '@ɪꜱʜɪᴅᴀɪɪ',
 			"buttons": [
 			{"buttonId": `${prefix}menu`,
 			"buttonText": {"displayText": "MENU"
@@ -5179,7 +5179,7 @@ Ramdani.sendMessage(_.jid,
              for (let _ of anu) {
 Ramdani.sendMessage(_.jid, 
 			{"contentText": `*「 SIARAN RAMDANI BOTZ」*\n*Izin Siaran Ngap:v*\n*Pesan :* ${body.slice(4)}`,
-			"footerText": '© ʙʏ ʀᴀᴍᴅᴀɴɪ ᴏғғɪᴄɪᴀʟ',
+			"footerText": '@ɪꜱʜɪᴅᴀɪɪ',
 			"buttons": [
 			{"buttonId": `${prefix}menu`,
 			"buttonText": {"displayText": "MENU"
